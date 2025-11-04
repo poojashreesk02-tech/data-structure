@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int R, C;
+    int *matrix, *transpose;
+
+    printf("Enter number of rows (R): ");
+    scanf("%d", &R);
+    printf("Enter number of columns (C): ");
+    scanf("%d", &C);
+
+    // Allocate memory for R*C elements in one block
+    matrix = (int *)malloc(R * C * sizeof(int));
+    if (matrix == NULL) {
+        printf("Memory allocation failed!\n");
+        return 1;
+    }
+
+    printf("Enter %d elemen
