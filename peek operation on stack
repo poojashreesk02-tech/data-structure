@@ -1,0 +1,15 @@
+#include<stdio.h>
+#define MAX 3
+int stack[MAX];
+int top=-1;
+void peek(){
+    if(top==-1)
+    printf("stack is empty\n");
+    else{
+        printf("top element:%d",stack[top]);
+    }
+    
+}
+int main(){
+   peek();
+   }
