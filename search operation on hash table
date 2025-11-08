@@ -1,0 +1,16 @@
+void search(int ket){
+    int index=hashfunction(key,size);
+    int i=0;
+    while(hashtable[(index+i)%SIZE]!=-1){
+        i++;
+        if(i==SIZE){
+            printf("hash table is full");
+            return;
+        }
+        i++;
+        if(i==SIZE)
+        break;
+    }
+   
+    printf("%d not found to delete"key);
+}
