@@ -1,0 +1,13 @@
+void deletekey(int ket){
+    int index=hashfunction(key,size);
+    int i=0;
+    while(hashtable[(index+i)%SIZE]!=-1){
+        i++;
+        if(i==SIZE){
+            printf("%d deleted\n",key);
+            return;
+        }
+        i++;
+        if(i==SIZE)
+        break;
+    }
