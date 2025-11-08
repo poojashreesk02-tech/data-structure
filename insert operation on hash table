@@ -1,0 +1,13 @@
+void insert(int ket){
+    int index=hashfunction(key,size);
+    int i=0;
+    while(hashtable[(index+i)%SIZE]!=-1){
+        i++;
+        if(i==SIZE){
+            printf("hash table is full");
+            return;
+        }
+    }
+    hashtable[(index+i)%SIZE]=key;
+    printf("%d inserted %d",key,(index+i)%SIZE);
+}
